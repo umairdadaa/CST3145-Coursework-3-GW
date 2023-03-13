@@ -2,8 +2,9 @@ var cacheName = 'v1';
 var cacheFiles = [
     '/',
     '/index.html',
-    '/css/main.css',
-    '/js/lessons.js',
+    '/CSS/style.css',
+    '/JavaScript/script.js',
+    '/JavaScript/products.js',
     '/img',
     '/randymart.webmanifest',
 ];
