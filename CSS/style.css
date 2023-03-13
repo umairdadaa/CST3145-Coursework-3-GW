@@ -1,0 +1,99 @@
+body {
+    font-family: "Domine", sans-serif;
+}
+
+/*Modal*/
+
+/* width */
+#scroll::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Track */
+#scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+#scroll::-webkit-scrollbar-thumb {
+    background: rgb(133, 132, 132);
+}
+
+/* burger animation */
+
+.fadeInAnimation {
+    animation: fadeLeft ease-in-out 1s forwards;
+}
+
+.fadeOutAnimation {
+    animation: fadeOut ease-in-out 1s forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+@keyframes fadeOut {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Cart Animation */
+
+.fadeInAnimationCart {
+    animation: fadeRight ease-in-out 1s forwards;
+}
+
+.fadeOutAnimationCart {
+    animation: fadeOutRight ease-in-out 1s forwards;
+}
+
+
+@keyframes fadeInCart {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes fadeOutRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
